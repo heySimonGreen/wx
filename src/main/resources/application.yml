@@ -1,0 +1,15 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    username: root
+    password: chenwei1234
+    url: jdbc:mysql://127.0.0.1:3306/crm?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+wx:
+  access_token_url: https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=APPID&secret=APPSECRET
+  appId: wx6deec51d8a82b2f4
+  secret: 0d67c538a529e590528917d1be138c14
